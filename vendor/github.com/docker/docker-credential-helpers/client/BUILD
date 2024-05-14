@@ -9,8 +9,5 @@ go_library(
     importmap = "github.com/GoogleCloudPlatform/docker-credential-gcr/v2/vendor/github.com/docker/docker-credential-helpers/client",
     importpath = "github.com/docker/docker-credential-helpers/client",
     visibility = ["//visibility:public"],
-    deps = [
-        "//vendor/github.com/docker/docker-credential-helpers/credentials:go_default_library",
-        "//vendor/golang.org/x/sys/execabs:go_default_library",
-    ],
+    deps = ["//vendor/github.com/docker/docker-credential-helpers/credentials:go_default_library"],
 )
