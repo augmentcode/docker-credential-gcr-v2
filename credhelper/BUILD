@@ -6,10 +6,12 @@ go_library(
     importpath = "github.com/GoogleCloudPlatform/docker-credential-gcr/v2/credhelper",
     visibility = ["//visibility:public"],
     deps = [
+        "//auth:go_default_library",
         "//config:go_default_library",
         "//store:go_default_library",
         "//util/cmd:go_default_library",
         "//vendor/github.com/docker/docker-credential-helpers/credentials:go_default_library",
+        "//vendor/golang.org/x/oauth2:go_default_library",
         "//vendor/golang.org/x/oauth2/google:go_default_library",
     ],
 )

@@ -1,5 +1,5 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 licenses(["notice"])  # Apache 2.0
 
@@ -13,7 +13,7 @@ gazelle(
         "-build_file_name",
         "BUILD,BUILD.bazel",  # Prioritize `BUILD` for newly added files.
     ],
-    prefix = "github.com/GoogleCloudPlatform/docker-credential-gcr",
+    prefix = "github.com/GoogleCloudPlatform/docker-credential-gcr/v2",
 )
 
 go_library(

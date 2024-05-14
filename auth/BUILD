@@ -19,5 +19,6 @@ go_test(
     deps = [
         "//config:go_default_library",
         "//vendor/golang.org/x/oauth2:go_default_library",
+        "//vendor/golang.org/x/sync/errgroup:go_default_library",
     ],
 )
